@@ -1,1 +1,1 @@
-from scripts import *
+from . import clean_telecom_dataframe
