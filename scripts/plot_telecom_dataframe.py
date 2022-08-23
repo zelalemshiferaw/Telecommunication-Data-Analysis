@@ -30,10 +30,10 @@ class TelecomPlotter:
         plt.show()
 
     def plot_heatmap(self, df: pd.DataFrame, title: str, cbar=False) -> None:
-        plt.figure(figsize=(12, 7))
-        sns.heatmap(df, annot=True, cmap='viridis', vmin=0,
+        plt.figure(figsize=(11, 6))
+        sns.heatmap(df, annot=True, cmap='Green', vmin=0,
                     vmax=1, fmt='.2f', linewidths=.7, cbar=cbar)
-        plt.title(title, size=18, fontweight='bold')
+        plt.title(title, size=16, fontweight='bold')
         plt.show()
 
     def plot_box(self, df: pd.DataFrame, x_col: str, title: str) -> None:
