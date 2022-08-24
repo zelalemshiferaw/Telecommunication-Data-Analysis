@@ -39,6 +39,10 @@ Data source For this Project was given as sampled telecommunication data.
 ### Notebooks 
 This folder holds the nooteboks used to process and visualize the data 
 - Data exploration and Preprocessing - holds Data Exploratory and visualizations
+- User Overview analysis
+- User Engagement analysis
+- User Experience analysis
+- User Satisfaction analysis
 ### Data
 This folder holds the data of the project
   - Global preprocessed data
