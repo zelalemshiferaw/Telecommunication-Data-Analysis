@@ -29,9 +29,9 @@ class TelecomPlotter:
         plt.ylabel(ylabel, fontsize=16)
         plt.show()
 
-    def plot_heatmap(self, df: pd.DataFrame, title: str, cbar=False) -> None:
+    def plot_heatmap(self, df: pd.DataFrame, title: str, cbar='Greens') -> None:
         plt.figure(figsize=(11, 6))
-        sns.heatmap(df, annot=True, cmap='Green', vmin=0,
+        sns.heatmap(df, annot=True, vmin=0,
                     vmax=1, fmt='.2f', linewidths=.7, cbar=cbar)
         plt.title(title, size=16, fontweight='bold')
         plt.show()
