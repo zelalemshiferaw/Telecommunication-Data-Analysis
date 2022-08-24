@@ -7,7 +7,7 @@ sys.path.append(os.path.abspath(os.path.join("../Telecommunication-Data-Analysis
 
 from scripts import clean_telecom_dataframe
 
-df = pd.read_csv("../data/telecom_cleaned_data.csv")
+df = pd.read_csv("./tests/telecom_cleaned_data.csv")
 
 class TestCleaTelco(unittest.TestCase):
     
