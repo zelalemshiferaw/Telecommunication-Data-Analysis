@@ -45,7 +45,7 @@ This folder holds the nooteboks used to process and visualize the data
 - User Satisfaction analysis
 ### Data
 This folder holds the data of the project
-  - Global preprocessed data
+  - Telecom data
 
 ### Dashboard 
 
