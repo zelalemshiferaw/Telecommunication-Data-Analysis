@@ -13,7 +13,7 @@ class TestCleaTelco(unittest.TestCase):
     
     def setUp(self):
         self.clean_telecom = clean_telecom_dataframe.Telecom()
-    def test_convert_to_string(self):
+    def ctest_convert_to_string(self):
         self.assertEqual(self.clean_telecom.convert_to_string(df, 'Handset Type')['Handset Type'].dtype, 'string')
 
     def test_convert_to_datetime(self):
