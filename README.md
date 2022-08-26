@@ -9,6 +9,7 @@
   - [Project Structure](#project-Structure)
     - [Notebooks](#notebooks)
     - [Data](#data)
+    - [Screenshots](#screenshots)
     - [Dashboard](#dashboard)
   - [Contact](#contact)
 
@@ -33,6 +34,11 @@ A Telecommunication-Data-Analysis to analyze  telecom data effectively and enabl
 Data source For this Project was given as sampled telecommunication data.
 </p>
 
+
+## Screenshots
+<p>
+ Telecommunication data analysis basic screenshots
+ </p>
 
 ## Project Structure
 
