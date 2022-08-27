@@ -54,6 +54,7 @@ This folder holds the data of the project
   - Telecom data
 
 ### Dashboard 
+This folder holds user overview, user engagement,user experience and user satisfaction dashboard.
 
 
 
