@@ -11,7 +11,7 @@ import plotly.express as px
 def app():
     st.title('Data Overview')
 
-    clean_data_df = pd.read_csv("../data/telecom_cleaned_data.csv")
+    clean_data_df = pd.read_csv("./data/telecom_cleaned_data.csv")
 
     st.header('Here we have An Overview of our data set')
     st.write(clean_data_df)

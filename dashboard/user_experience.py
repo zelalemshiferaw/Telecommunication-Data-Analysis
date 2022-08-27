@@ -7,7 +7,7 @@ import plotly.express as px
 
 def app():
     st.title('Data Experience')
-    clean_data_df = pd.read_csv("../data/telecom_cleaned_data.csv")
+    clean_data_df = pd.read_csv("./data/telecom_cleaned_data.csv")
 
     tellco_exprience_df = clean_data_df[['MSISDN/Number', 'Avg RTT DL (ms)', 'Avg RTT UL (ms)', 'Avg Bearer TP DL (kbps)',
                                          'Avg Bearer TP UL (kbps)', 'TCP DL Retrans. Vol (Bytes)', 'TCP UL Retrans. Vol (Bytes)', 'Handset Type']]
@@ -50,20 +50,7 @@ def app():
     lowest = lowest.reset_index('MSISDN/Number')
     fig = px.bar(lowest, x='MSISDN/Number', y=option)
     fig.update_layout(xaxis_type='category')
-    # fig = px.pie(lowest, names='MSISDN/Number', values=option)
     st.plotly_chart(fig)
-    # most = most.reset_index('MSISDN/Number')
-    # fig = px.pie(most, names='MSISDN/Number', values=option)
-    # st.plotly_chart(fig)
+
     st.header("Most")
     st.dataframe(most)
-    # name = 'number of xDR Sessions'
-    # elif option == 'Total Avg Bearer TP (kbps)':
-    #     data = clean_data_df.sort_values('Dur (ms)', ascending=False).head(10)
-    #     # name = 'Dur (ms)'
-    # elif option == 'Total TCP Retrans. Vol (Bytes)':
-    #     data = clean_data_df.sort_values(
-    #         'Total Data Volume (Bytes)', ascending=False).head(10)
-    # name = 'Total Data Volume (Bytes)'
-
-    # st.plotly_chart(fig)
