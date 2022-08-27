@@ -9,7 +9,7 @@ def app():
     st.title('Data Engagement')
 
     st.header('Here is sample data from the cleaned table')
-    clean_data_df = pd.read_csv("../data/telecom_cleaned_data.csv")
+    clean_data_df = pd.read_csv("./data/telecom_cleaned_data.csv")
     st.dataframe(clean_data_df)
     clean_data_df = clean_data_df[['MSISDN/Number', 'Bearer Id', 'Dur (ms)', 'Total Data Volume (Bytes)', 'Social Media Data Volume (Bytes)', 'Google Data Volume (Bytes)',
                                    'Email Data Volume (Bytes)', 'Youtube Data Volume (Bytes)', 'Netflix Data Volume (Bytes)',
