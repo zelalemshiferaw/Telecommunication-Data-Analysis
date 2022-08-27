@@ -1,6 +1,4 @@
-
-
-from dashboard import user_engagement, user_experience, user_overview
+from dashboard import user_engagement, user_experience, user_overview,user_satsifaction
 from multiapp import MultiApp
 import streamlit as st
 import sys
@@ -25,7 +23,8 @@ This multi-page app is using the [streamlit-multiapps](https://github.com/uprane
 # Add all your application here
 app.add_app("User Overview Analysis", user_overview.app)
 app.add_app("User Engagement Analysis", user_engagement.app)
-app.add_app("User Experience Analysis", user_engagement.app)
+app.add_app("User Experience Analysis", user_experience.app)
+app.add_app("User Satisfaction Analysis", user_satsifaction.app)
 
 # The main app
 app.run()
