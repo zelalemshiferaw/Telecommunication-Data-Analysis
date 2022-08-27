@@ -1,0 +1,10 @@
+
+
+services:
+  streamlit:
+    container_name: "telecom_user_data_analysis"
+    build:
+      dockerfile: ./Dockerfile
+      context: ./
+    ports:
+      - 8080
